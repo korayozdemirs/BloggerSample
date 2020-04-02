@@ -14,5 +14,6 @@ namespace BloggerSample.Entity
         public string Title { get; set; }
         public string Content { get; set; }
         public string Phone { get; set; }
+        public bool Read { get; set; }
     }
 }

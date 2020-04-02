@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,5 +18,13 @@ namespace BloggerSample.Entity
         public string Location { get; set; }
         public string Browser { get; set; }
         public string IP { get; set; }
+
+        [ForeignKey("Role")]
+        public Nullable<int> RoleId { get; set; }
+        public virtual Role Role { get; set; }
+
+        [ForeignKey("UserDetail")]
+        public Nullable<int> UserDetailId { get; set; }
+        public virtual UserDetail UserDetail { get; set; }
     }
 }
