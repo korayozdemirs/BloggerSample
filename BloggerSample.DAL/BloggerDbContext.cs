@@ -24,5 +24,7 @@ namespace BloggerSample.DAL
         public DbSet<User> Users { get; set; }
         public DbSet<UserDetail> UserDetails { get; set; }
 
+
+
     }
 }
