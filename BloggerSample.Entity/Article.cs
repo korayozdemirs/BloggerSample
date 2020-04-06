@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BloggerSample.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BloggerSample.Entity
 {
-    public class Article
+    public class Article : IEntity
     {
         public Article()
         {

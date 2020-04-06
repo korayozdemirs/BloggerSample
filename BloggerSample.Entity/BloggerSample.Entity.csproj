@@ -52,5 +52,11 @@
     <Compile Include="User.cs" />
     <Compile Include="UserDetail.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BloggerSample.Core\BloggerSample.Core.csproj">
+      <Project>{5a0406d3-09ed-47e1-951c-51ffc25776d1}</Project>
+      <Name>BloggerSample.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

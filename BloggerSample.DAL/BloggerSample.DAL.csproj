@@ -56,12 +56,15 @@
     <Compile Include="Migrations\202004021812141_initial.designer.cs">
       <DependentUpon>202004021812141_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004061710185_dataprovider.cs" />
+    <Compile Include="Migrations\202004061710185_dataprovider.designer.cs">
+      <DependentUpon>202004061710185_dataprovider.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="BloggerSample.rar" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202004021812141_initial.resx">
       <DependentUpon>202004021812141_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004061710185_dataprovider.resx">
+      <DependentUpon>202004061710185_dataprovider.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

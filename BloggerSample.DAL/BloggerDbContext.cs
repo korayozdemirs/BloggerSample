@@ -10,7 +10,7 @@ namespace BloggerSample.DAL
 {
     public class BloggerDbContext : DbContext
     {
-        public BloggerDbContext() : base("name:BloggerDbConnection")
+        public BloggerDbContext() : base("name=BloggerDbConnection")
         {
 
         }
